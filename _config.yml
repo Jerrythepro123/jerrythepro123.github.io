@@ -119,7 +119,7 @@ feed:
   template:
 
 admin:
-  username: jerrythepro123
+  username: Jerrythepro123
   password_hash: $2a$10$jmUmTJXgaRlSiBN1nhTB1uYKLAH2SqeCW8SGhLOPFpHFuFvnERSKu
   secret: QAZWSXEDCRFVTGBYHNUJMIKOL
 

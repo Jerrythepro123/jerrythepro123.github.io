@@ -211,7 +211,7 @@ int main() {
 
 
 
-![](pic/output.jpg)
+![](/pic/output.jpg)
 
 size已经被覆盖成0xffffffffffffffff，这样可以改pos来进行相对任意写和读。
 
@@ -227,7 +227,7 @@ for(int i=0;i<0x100;i++){ spray[i] = open("/dev/ptmx", O_RDONLY | O_NOCTTY); }
 
 
 
-![](pic/1fc6b364-f6cc-40ff-964d-6de02e1ff1de.jpg)
+![](/pic/1fc6b364-f6cc-40ff-964d-6de02e1ff1de.jpg)
 
 最后，把name指针改为modprobe_path来覆盖为/tmp/x，这样可以在root权限进行任意代码。
 
