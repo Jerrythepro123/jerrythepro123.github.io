@@ -1,6 +1,6 @@
 ---
-title: irisctf checksumz  2025 (modprobe_path)
-date: 2025-03-20 11:53:28
+title: irisctf checksumz 2025 (modprobe_path)
+date: 2025-03-20 12:39:41
 tags:
 ---
 
@@ -212,11 +212,7 @@ int main() {
 
 
 
-
-
-![output](/Users/Jerrythepro123/Desktop/jerrythepro123.github.io/source/_posts/output.png)
-
-
+![](pic/output.jpg)
 
 size已经被覆盖成0xffffffffffffffff，这样可以改pos来进行相对任意写和读。
 
@@ -230,9 +226,9 @@ for(int i=0;i<0x100;i++){ spray[i] = open("/dev/ptmx", O_RDONLY | O_NOCTTY); }
 
 这样在buf下面会有tty堆块可以读。在泄漏过程中可能会出现泄漏不成功，可以选择多创造点堆块来提升稳定性和在不同位置读堆块来稳定的获得基地址。
 
-![1fc6b364-f6cc-40ff-964d-6de02e1ff1de](/Users/Jerrythepro123/Desktop/jerrythepro123.github.io/source/_posts/1fc6b364-f6cc-40ff-964d-6de02e1ff1de.png)
 
 
+![](pic/1fc6b364-f6cc-40ff-964d-6de02e1ff1de.jpg)
 
 最后，把name指针改为modprobe_path来覆盖为/tmp/x，这样可以在root权限进行任意代码。
 
@@ -466,4 +462,3 @@ int main() {
 参考
 
 https://lkmidas.github.io/posts/20210223-linux-kernel-pwn-modprobe/
-
