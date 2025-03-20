@@ -3,17 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Jerrythepro123's blog
+title: Hexo
 subtitle: ''
 description: ''
 keywords:
 author: John Doe
-language: en
+language: zh
 timezone: ''
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://jerrythepro123.github.io/
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://renbaoshuo.github.io
+root: /hexo-theme-pure/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -43,18 +44,15 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
-
-#highlight:
-#  line_number: true
-#  auto_detect: false
-#  tab_replace: ''
-#  wrap: true
-#  hljs: false
-#prismjs:
-#  preprocess: true
-#  line_number: true
-#  tab_replace: ''
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: true
+  tab_replace: '    '
+  wrap: false
+  hljs: true
+prismjs:
+  enable: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -103,52 +101,3 @@ theme: pure
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-
-feed:
-  enable: true
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
-  icon: icon.png
-  autodiscovery: true
-  template:
-
-admin:
-  username: jerrythepro123
-  password_hash: $2a$10$jmUmTJXgaRlSiBN1nhTB1uYKLAH2SqeCW8SGhLOPFpHFuFvnERSKu
-  secret: QAZWSXEDCRFVTGBYHNUJMIKOL
-
-highlight:
-  enable: true
-  auto_detect: true
-  line_number: false  # This value must be `false`
-  wrap: false         # This value must be `false`
-  tab_replace: '    ' # 4 spaces
-  hljs: true          # This value must be `true`
-prismjs:
-  enable: false
-
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-  plugins:
-    - '@neilsustc/markdown-it-katex'
-  anchors:
-    level: 2
-    collisionSuffix: 't'
-    permalink: false
-    permalinkClass: header-anchor
-    permalinkSymbol: ''
-
-# Markdown-it config
-## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
-
