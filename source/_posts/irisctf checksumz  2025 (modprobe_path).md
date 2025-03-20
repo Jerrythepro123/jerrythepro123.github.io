@@ -1,5 +1,6 @@
-﻿
-` `**irisctf checksumz  2025 (modprobe\_path)**
+---
+title: irisctf checksumz  2025 (modprobe\_path)
+---
 
 用2025 irisctf checksumz 来学习modprobe path来任意代码执行
 
