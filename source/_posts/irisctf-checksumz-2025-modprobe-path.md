@@ -1,7 +1,8 @@
 ---
 title: irisctf checksumz 2025 (modprobe_path)
 date: 2025-03-20 12:39:41
-tags:
+tags: Kernel
+description: 内核学习
 ---
 
 用2025 irisctf checksumz 来学习modprobe path来任意代码执行
